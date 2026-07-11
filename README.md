@@ -35,7 +35,14 @@ The repository is organised in three folders, mirroring the three constructive r
 
 We consider steady, two-dimensional, periodic gravity water waves with constant vorticity $\gamma$, propagating at wave speed $c$ over a flat bed. Using a conformal map from a fixed strip to the (a priori unknown, possibly overhanging) fluid domain, the free-boundary Euler equations are reduced to a single scalar equation posed on the free surface. Writing the surface elevation as a cosine Fourier series $a$, and denoting by $Q$ the Bernoulli constant and by $m$ the relative mass flux, the profiles are the zeros of the nonlinear map $F(U)=0$ with augmented unknown $U=(Q,a)$:
 
-$$F(U) = \begin{pmatrix} a_0 - h \\ \big(m\,\mathbb{D}_y e_0 + \tfrac12\gamma\,\mathbb{D}_y(a^2) - \gamma\, a\,\mathbb{D}_y a\big)^2 - (Q - 2g\,a)\big((\mathbb{D}_x a)^2 + (\mathbb{D}_y a)^2\big)\end{pmatrix} = 0.$$
+$$
+F(U) =
+\begin{pmatrix}
+a_0 - h \\
+\left(m\,\mathbb{D}_y e_0 + \tfrac{1}{2}\gamma\,\mathbb{D}_y(a^2) - \gamma\,a\,\mathbb{D}_y a\right)^2 - (Q - 2g\,a)\left((\mathbb{D}_x a)^2 + (\mathbb{D}_y a)^2\right)
+\end{pmatrix}
+= 0.
+$$
 
 Here $g$ is the gravitational constant, $h$ the (conformal) mean depth, $e_0$ the constant identity sequence, and $\mathbb{D}_x, \mathbb{D}_y$ are the Fourier multiplier operators induced by the conformal map: $\mathbb{D}_x$ is spatial differentiation (symbol $in$ on mode $n$) and $\mathbb{D}_y$ has symbol $n\coth(nh)$ (and $1/h$ at $n=0$). The first component fixes the conformal depth, while the second is the Bernoulli dynamic boundary condition.
 
@@ -126,4 +133,4 @@ If you wish to use this code in your publication, research, teaching, or other a
 
 You can contact me at :
 
-matthieu.cadiot@mail.mcgill.ca
+matthieu.cadiot@polytechnique.edu
